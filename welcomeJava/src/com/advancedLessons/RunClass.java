@@ -12,6 +12,15 @@ public class RunClass {
 		
 		EmployeeClass ecl = new EmployeeClass();
 		 System.out.println(ecl.getEmpId()); 
+		 
+		 CarClass ccl = new CarClass();
+		 Human hm = new Human();
+		 
+		 EntityInterface eifm = ccl;
+		 eifm.showInfo();
+		 EntityInterface eifh = hm;
+		 eifh.showInfo();
+		 
 
 	}
 
