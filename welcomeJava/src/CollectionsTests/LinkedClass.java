@@ -1,5 +1,6 @@
 package CollectionsTests;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 import com.advancedLessons.CarClass;
@@ -14,8 +15,10 @@ public class LinkedClass {
 	}
 	
 	public void iterateLinkedList() {
-		for(CarClass cl: carList) {
-			cl.driveCar();
+		
+		Iterator<CarClass> ir = carList.iterator();
+		while(ir.hasNext()) {
+			ir.next().driveCar();
 		}
 		
 	}

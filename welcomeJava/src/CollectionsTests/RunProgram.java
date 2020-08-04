@@ -4,13 +4,7 @@ public class RunProgram {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		LinkedClass lc = new LinkedClass();
-		lc.addLinkedList();
-		lc.iterateLinkedList();
-		lc.removeLinkedList();
-		lc.addLinkedList();
-		lc.addLinkedList();
-		lc.iterateLinkedList();
+
 		
 		
 		HashClass hc = new HashClass();
@@ -32,6 +26,14 @@ public class RunProgram {
 		}
 		acl.sortHumans();
 		acl.displayHumans();
+		
+		LinkedClass lc = new LinkedClass();
+		lc.addLinkedList();
+		lc.iterateLinkedList();
+		lc.removeLinkedList();
+		lc.addLinkedList();
+		lc.addLinkedList();
+		lc.iterateLinkedList();
 
 	}
 
