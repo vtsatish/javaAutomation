@@ -33,8 +33,6 @@ public class RunClass {
 		 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 		 System.out.println(myObj.format(dtf));
 		 
-		 hm.addFriends();
-		 hm.listFriends();
 
 		 /* File operations*/		
 		 FileOperations fop = new FileOperations();
@@ -47,7 +45,7 @@ public class RunClass {
 			System.out.println("Could not catch..\n");
 		}
 		 
-/* process example*/		 
+/* process example		 
 		 String command = "ping www.codejava.net";
 		 
 		 try {
@@ -66,6 +64,12 @@ public class RunClass {
 		 } catch (IOException e) {
 		     e.printStackTrace();
 		 }
+		 */
+		 
+		 hm.addFriends();
+		 hm.removeFriends();
+		 hm.addFriends();
+		 hm.listFriends();
 		
 		 
 

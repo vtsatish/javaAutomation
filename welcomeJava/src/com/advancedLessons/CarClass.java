@@ -1,12 +1,14 @@
 package com.advancedLessons;
 
 public class CarClass extends Machine{
+	public static int counter = 0;
 	
 	public int wheels = 4;
 	
 	public CarClass() {
 		super();
 		this.machineName = "Car";
+		counter++;
 	}
 	
 	public CarClass(int wheels) {
@@ -15,7 +17,9 @@ public class CarClass extends Machine{
 	}
 
 	public void driveCar() {
-		System.out.println(machineName + "driving..\n");
+
+		System.out.println(machineName + this.toString() + " driving..\n");
 	}
 
 }
+

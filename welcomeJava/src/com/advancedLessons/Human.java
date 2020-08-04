@@ -1,10 +1,18 @@
 package com.advancedLessons;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Human implements EntityInterface{
+	public String name;
 
-	 ArrayList<String> al = new ArrayList<String>();
+	 public Human() {
+		super();
+		LocalDateTime ld = LocalDateTime.now();
+		name = "test" + ld;
+	}
+
+	ArrayList<String> al = new ArrayList<String>();
 	
 	public void readText(){
 		
@@ -17,11 +25,8 @@ public class Human implements EntityInterface{
 	}
 	
 	public void addFriends() {
-
 		 al.add("A");
-		 al.add("B");
-		 
-		 
+		 al.add("B");		 
 	}
 	
 	public void listFriends() {
@@ -36,6 +41,10 @@ public class Human implements EntityInterface{
 			System.out.println(obnew);
 		}
 		
+	}
+	
+	public void removeFriends() {
+		 al.remove(al.size() -1);	 
 	}
 
 }
