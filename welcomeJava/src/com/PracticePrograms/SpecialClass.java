@@ -17,11 +17,26 @@ public class SpecialClass {
 	
 	public void removeElementArray(int remind) {
 		int[] arrNum = {10,20,30,40,50,60,70};
-		
-		for(int i = remind; i<arrNum.length -1 ; i++) {
-			arrNum[i] = arrNum[i+1];
+		boolean replace = false;
+		try {
+			for(int i = remind-1; i<arrNum.length -1 ; i++) {
+				arrNum[i] = arrNum[i+1];
+				replace = true;
+			}
+			if(replace == true || remind == arrNum.length) {
+				arrNum[arrNum.length-1] = 0;
+			}
+			else {
+				System.out.println("Nothing replaced");
+			}
+			
 		}
-		arrNum[arrNum.length-1] = null;
+		catch (Exception e) {
+			System.out.println("Caught.." + e.toString());
+		}
+		
+
+
 		
 		System.out.println("Printing the array:\n");
 		
