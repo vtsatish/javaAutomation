@@ -9,7 +9,7 @@ public class RunPrograms {
 		//recursion
 		System.out.println(spl.factCalc(15));
 		//
-		spl.removeElementArray(0);
+		spl.removeElementArray(5);
 	}
 
 }
