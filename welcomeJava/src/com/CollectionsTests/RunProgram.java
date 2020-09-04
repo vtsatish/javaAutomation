@@ -1,4 +1,4 @@
-package CollectionsTests;
+package com.CollectionsTests;
 
 public class RunProgram {
 
@@ -29,10 +29,12 @@ public class RunProgram {
 		
 		LinkedClass lc = new LinkedClass();
 		lc.addLinkedList();
+		System.out.println("first iteration//\n");
 		lc.iterateLinkedList();
 		lc.removeLinkedList();
 		lc.addLinkedList();
 		lc.addLinkedList();
+		System.out.println("Second iteration//\n");
 		lc.iterateLinkedList();
 
 	}
