@@ -36,6 +36,8 @@ public class RunProgram {
 		lc.addLinkedList();
 		System.out.println("Second iteration//\n");
 		lc.iterateLinkedList();
+		lc.searchLinkedList(1);
+		System.out.println("...done...\n");
 
 	}
 

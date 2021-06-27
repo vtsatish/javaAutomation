@@ -27,5 +27,10 @@ public class LinkedClass {
 		carList.removeFirst();
 		
 	}
+	
+	public void searchLinkedList(int sloc)
+	{
+		carList.get(sloc).driveCar();
+	}
 
 }
