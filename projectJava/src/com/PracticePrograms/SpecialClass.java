@@ -15,7 +15,8 @@ public class SpecialClass {
 
 	}
 	
-	public void removeElementArray(int remind) {
+	public void removeElementArray(int remind) 
+	{
 		int[] arrNum = {10,20,30,40,50,60,70};
 		boolean replace = false;
 		try {

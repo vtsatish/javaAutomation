@@ -18,7 +18,7 @@ public class CarClass extends Machine{
 
 	public void driveCar() {
 
-		System.out.println(machineName + this.toString() + " driving..\n");
+		System.out.println(machineName + " named " + this.toString() + " driving..\n");
 	}
 
 }
