@@ -16,4 +16,12 @@ public class ClassArray {
 		
 	}
 
+	public void assignArray(){
+		int counter = 0;
+		for (int i = 0; i < arrayVariable.length; i++) {
+			arrayVariable[i] = counter++;
+		}
+
+	}
+
 }
